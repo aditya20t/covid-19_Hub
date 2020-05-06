@@ -8,27 +8,30 @@
     </head>
     <body>
         <hr>
-        <%var districts = data.find(item => item.state === _state);%>
-        <h1 class="text-center bg-light" style="font-family: 'Sacramento', cursive; font-weight: bold; ">Hello welcome to COVID-19 Tracker!!</h1>
-        <hr>
-        <h2 class="text-center text-danger">STATE: <%=_state%></h2>
-        <br>
         <div class="container">
-            <table class="table table-striped table-bordered table-dark">
-                <thead class="thead-light">
-                <th>States</th><th>Confirmed</th><th>Active</th><th>Deceased</th><th>Recovered</th>
-                    <%for(var key in districts.districtData){%>
-                        <tr>
-                            <td><%= districts.districtData[key].district %></td>
-                            <td><%= districts.districtData[key].confirmed %></td>
-                            <td><%= districts.districtData[key].active %></td>
-                            <td><%= districts.districtData[key].deceased %></td>
-                            <td><%= districts.districtData[key].recovered %></td>
-                        </tr>
-                    <%}%>
-                </thead>
-            </table>
+            <%var districts = data.find(item => item.state === _state);%>
+            <h1 class="text-center bg-light" style="font-family: 'Sacramento', cursive; font-weight: bold; ">Hello welcome to COVID-19 Tracker!!</h1>
+            <hr>
+            <h2 class="text-center text-danger">STATE: <%=_state%></h2>
+            <br>
+            <div class="container">
+                <table class="table table-striped table-bordered table-dark table-responsive-md">
+                    <thead class="thead-light">
+                    <th>States</th><th>Confirmed</th><th>Active</th><th>Deceased</th><th>Recovered</th>
+                        <%for(var key in districts.districtData){%>
+                            <tr>
+                                <td><%= districts.districtData[key].district %></td>
+                                <td><%= districts.districtData[key].confirmed %></td>
+                                <td><%= districts.districtData[key].active %></td>
+                                <td><%= districts.districtData[key].deceased %></td>
+                                <td><%= districts.districtData[key].recovered %></td>
+                            </tr>
+                        <%}%>
+                    </thead>
+                </table>
+            </div>
         </div>
+        
     </body>
     <footer>
         <%- include('../components/footer.ejs'); -%>
