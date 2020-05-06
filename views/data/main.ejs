@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%- include('../components/header.ejs'); -%>
+    </head>
+    <body>
+        <h1 class="text-center bg-light" style="font-family: 'Sacramento', cursive; font-weight: bold; ">Welcome to the world's data !!</h1>
+        <hr>
+        <style>
+            body{
+                background-image: url('../images/bg.jpg');
+            }
+            td {
+                color: #d8ebb5;
+            }
+            .table h4{
+                color: #fff;
+            }
+        </style>
+        <div class="container">
+            <table class="table table-striped table-bordered table-dark">
+                <thead class="thead-light">
+                    <th>Countries</th><th>Total Confirmed</th><th>Total Deaths</th><th>Total Recovered</th><th>New Confirmed</th>
+                    <%for(var key in data.Countries){%>
+                        <tr>
+                            <td><%=data.Countries[key].Country%></td>
+                            <td><%=data.Countries[key].TotalConfirmed%></td>
+                            <td><%=data.Countries[key].TotalDeaths%></td>
+                            <td><%=data.Countries[key].TotalRecovered%></td>
+                            <td><%=data.Countries[key].NewConfirmed%></td>
+                        </tr>
+                    <%}%>
+                </thead>
+            </table>
+        </div>
+        <br>
+    </body>
+
+   <footer>
+        <hr style="margin-bottom: 0;">
+        <%- include('../components/footer.ejs') -%>
+   </footer>
+   
+</html>

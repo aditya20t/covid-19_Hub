@@ -1,0 +1,24 @@
+.Body{
+    background-image: url('../images/bg.jpg');
+}
+
+.world{
+    align-self: auto;
+}
+
+.title{
+    color: antiquewhite;
+    text-align: justify;
+    font-family: 'Modak', cursive;
+    font-size: 300%;
+}
+
+.title1{
+    color: antiquewhite;
+    text-align: justify;
+}
+
+td h4{
+    color: azure;
+} 
+
