@@ -1,0 +1,22 @@
+.title1{
+    padding-top: 1em;
+    margin: 0 0 1em 0;
+    text-align: center;
+    font-family: cursive;
+    color: #303960;
+}
+
+.title2{
+    padding-bottom: 1em;
+    text-align: center;
+    font-family: cursive;
+    color: #303960;
+}
+
+.body {
+    background-image: linear-gradient(to right, #B7F8DB, #50A7C2);
+}
+
+.state {
+    color: aliceblue;
+}
