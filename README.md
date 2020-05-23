@@ -9,7 +9,10 @@
 * Clone the repository in any folder in your local storage by `git clone <URL>`.
 * Do `cd covid-19_Hub`
 * Do `npm install`
-* Do `nodemon index.js`
+* Do `cd client`
+* Do `npm install`
+* Do `cd ..`
+* Do `npm run dev`
 * Head over to `http://localhost:3000` to visit the website.
 
 #### Feel free to clone this repository.
