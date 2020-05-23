@@ -1,6 +1,7 @@
 # covid-19_Hub
 
 #### Note: All the data is taken from the authentic source.
+### Tech-stack : Nodejs, Rectjs, Expressjs, Bootstrap, HTML, CSS
 ## If you are a visitor
 * Follow this link `https://covid-19-hub.herokuapp.com/`
 
